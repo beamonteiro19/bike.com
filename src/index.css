@@ -501,6 +501,11 @@ body {
   width: fit-content;
 }
 
+.footer-legal {
+  letter-spacing: 0.13em;
+  opacity: 0.88;
+}
+
 .street-footer::before {
   content: '';
   position: absolute;
@@ -705,6 +710,15 @@ h4 {
     background-attachment: scroll;
   }
 
+  .landing-header {
+    align-items: flex-start;
+  }
+
+  .header-meta {
+    margin-top: -2px;
+    letter-spacing: 0.14em;
+  }
+
   .street-signal {
     font-size: 0.95rem;
   }
@@ -722,6 +736,10 @@ h4 {
     position: static;
     display: inline-flex;
     margin-bottom: 8px;
+  }
+
+  .mini-map-frame {
+    min-height: 210px;
   }
 
   .editorial-ribbon-track {
