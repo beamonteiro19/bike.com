@@ -135,7 +135,7 @@ function App() {
                 <iframe
                   title="Mapa da BIKE.COM"
                   src="https://www.google.com/maps?q=Av.+Oswaldo+Pucci,+60,+Sao+Paulo,+SP,+08270-700&z=16&output=embed"
-                  className="h-full w-full"
+                  className="mini-map-frame h-full w-full"
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                 />
