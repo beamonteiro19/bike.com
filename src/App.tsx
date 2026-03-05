@@ -47,10 +47,16 @@ function App() {
         <div className="absolute -right-20 top-0 -z-10 h-80 w-80 rounded-full bg-(--color-cyan)/25 blur-3xl parallax-fast" />
         <div className="absolute bottom-0 left-1/2 -z-10 h-60 w-60 -translate-x-1/2 rounded-full bg-(--color-orange)/25 blur-3xl parallax-slow" />
 
-        <header className="mx-auto flex w-full max-w-6xl flex-col items-start justify-between gap-3 py-5 sm:flex-row sm:items-center">
+        <header
+          className="landing-header mx-auto flex w-full max-w-6xl flex-col items-start justify-between gap-3 py-5 sm:flex-row sm:items-center"
+          aria-label="Cabecalho da landing"
+        >
           <div className="brand-stamp text-xl font-black tracking-[0.2em] text-white md:text-2xl">
             BIKE.COM
           </div>
+          <p className="header-meta text-xs font-semibold uppercase tracking-[0.2em] text-slate-300">
+            Locacao no Parque do Carmo
+          </p>
         </header>
 
         <div className="hero-layout mx-auto mt-10 grid w-full max-w-6xl gap-10 md:mt-14 md:grid-cols-[1.1fr_0.9fr] md:items-center">

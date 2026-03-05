@@ -104,6 +104,15 @@ body {
   letter-spacing: 0.16em;
 }
 
+.landing-header {
+  align-items: center;
+}
+
+.header-meta {
+  margin: 0;
+  opacity: 0.86;
+}
+
 .brand-stamp::after {
   content: '';
   position: absolute;
