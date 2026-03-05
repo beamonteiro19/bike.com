@@ -501,6 +501,11 @@ body {
   width: fit-content;
 }
 
+.footer-legal {
+  letter-spacing: 0.13em;
+  opacity: 0.88;
+}
+
 .street-footer::before {
   content: '';
   position: absolute;

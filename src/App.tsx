@@ -250,7 +250,10 @@ function App() {
         </div>
       </section>
 
-      <footer className="street-footer border-t border-white/12 bg-slate-950/80 px-6 py-10 md:px-12">
+      <footer
+        className="street-footer border-t border-white/12 bg-slate-950/80 px-6 py-10 md:px-12"
+        aria-label="Rodape institucional"
+      >
         <div className="footer-shell mx-auto grid w-full max-w-6xl gap-8 md:grid-cols-[1.2fr_1fr_1fr]">
           <div>
             <p className="footer-block-title text-sm font-semibold uppercase tracking-[0.18em] text-lime-200">
@@ -295,7 +298,7 @@ function App() {
             </a>
           </nav>
         </div>
-        <p className="mx-auto mt-8 w-full max-w-6xl border-t border-white/10 pt-4 text-center text-xs uppercase tracking-[0.12em] text-slate-400">
+        <p className="footer-legal mx-auto mt-8 w-full max-w-6xl border-t border-white/10 pt-4 text-center text-xs uppercase tracking-[0.12em] text-slate-400">
           © 2026 BIKE.CAMARGO LTDA. Todos os direitos reservados.
         </p>
       </footer>
