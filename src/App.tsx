@@ -63,8 +63,8 @@ function App() {
 
   const rentalStatusLabel = useMemo(() => {
     return isRentalOpenNow(now)
-      ? 'Status: Locação aberta agora'
-      : 'Status: Locação fechada agora';
+      ? 'Status da Locação: ativa para aluguel agora'
+      : 'Status da Locação: fechada no momento, consulte os horários';
   }, [now]);
 
   return (
