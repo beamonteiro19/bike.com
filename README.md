@@ -2,6 +2,24 @@
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
+## Security Baseline
+
+This project now includes a baseline hardening setup:
+
+- `Content-Security-Policy` (CSP)
+- `Referrer-Policy`
+- `X-Content-Type-Options`
+- `X-Frame-Options`
+- `Permissions-Policy`
+
+Configured in:
+
+- `vite.config.ts` for `vite dev` and `vite preview`
+- `index.html` (meta fallback for static hosting)
+
+For production, prefer setting these as real HTTP response headers in your host/CDN
+(Cloudflare, Netlify, Vercel, Nginx, etc.) rather than only using meta tags.
+
 Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
