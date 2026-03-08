@@ -63,8 +63,8 @@ function App() {
 
   const rentalStatusLabel = useMemo(() => {
     return isRentalOpenNow(now)
-      ? 'Status: Locação aberta agora'
-      : 'Status: Locação fechada agora';
+      ? 'Status da Locação: ativa para aluguel agora'
+      : 'Status da Locação: fechada no momento, consulte os horários';
   }, [now]);
 
   return (
@@ -79,7 +79,14 @@ function App() {
           <div className="brand-stamp text-xl font-black italic tracking-tighter text-[#ccff00]">
             BIKE.COM <span className="hidden sm:inline opacity-20">// ALUGUEL DE BICICLETAS</span>
           </div>
-          <div className="flex items-center gap-6">
+          <div className="flex min-w-0 items-center gap-4 md:gap-6">
+            <nav className="hidden sm:flex max-w-[56vw] flex-wrap items-center justify-end gap-2 text-[10px] font-black tracking-wide text-white/80 md:max-w-[50vw] md:gap-3 md:text-[11px] lg:max-w-none lg:gap-6">
+              <a href="#frota" className="transition-colors hover:text-[#ccff00]">ESCOLHA SUA BIKE!</a>
+              <a href="#regras" className="transition-colors hover:text-[#ccff00]">
+                <span className="lg:hidden">REGRAS</span>
+                <span className="hidden lg:inline">REGRAS DE LOCAÇÃO</span>
+              </a>
+            </nav>
             <div className="hidden md:block text-right">
               <p className="text-[10px] font-bold opacity-40 uppercase tracking-widest">Contato da loja</p>
               <p className="text-sm font-black text-white">(11) 2597-1415</p>
@@ -180,7 +187,12 @@ function App() {
                   <div className="absolute inset-0 pointer-events-none border-[20px] border-[#0a1410] sm:border-[40px] opacity-20"></div>
                 </div>
 
-                <a href="https://maps.app.goo.gl/vS1U7hG5HjN6S3rN8" target="_blank" className="block text-center text-[10px] font-bold tracking-[0.3em] hover:text-[#ccff00] transition-colors">
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=Av.+Oswaldo+Pucci,+60,+Itaquera,+Sao+Paulo"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="block text-center text-[10px] font-bold tracking-[0.3em] hover:text-[#ccff00] transition-colors"
+                >
                   [ ABRIR NO GPS ]
                 </a>
               </div>
@@ -234,7 +246,7 @@ function App() {
         </section>
 
         {/* Regras e Contrato: A Parte Importante */}
-        <section className="py-24 px-6">
+        <section id="regras" className="py-24 px-6">
           <div className="mx-auto max-w-7xl">
             <div className="grid lg:grid-cols-[1fr_1.2fr] gap-20">
               <div className="space-y-12">
