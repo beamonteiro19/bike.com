@@ -1,91 +1,43 @@
-# React + TypeScript + Vite
+# BIKE.COM — Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Esta é a landing page oficial da BIKE.COM, uma empresa de aluguel de bicicletas localizada em frente ao Parque do Carmo, em São Paulo.
 
-## Security Baseline
+## Objetivo
+A página tem como objetivo apresentar de forma clara e atrativa os serviços de locação de bicicletas oferecidos pela BIKE.COM, destacando horários de funcionamento, regras de locação, localização da loja, formas de pagamento e informações de contato.
 
-This project now includes a baseline hardening setup:
+## Principais Funcionalidades
+- **Status dinâmico da locação:** Exibe em tempo real se a loja está aberta para aluguel, considerando dias da semana e feriados.
+- **Seção "Escolha sua bike":** Mostra a frota disponível, com detalhes e valores por hora.
+- **Regras de locação:** Lista as principais regras para alugar uma bicicleta.
+- **Cláusulas de responsabilidade:** Apresenta os termos do contrato de locação.
+- **Informações de contato e localização:** Endereço, telefone e link direto para o GPS.
+- **Design responsivo:** Visual moderno, adaptado para dispositivos móveis e desktop.
 
-- `Content-Security-Policy` (CSP)
-- `Referrer-Policy`
-- `X-Content-Type-Options`
-- `X-Frame-Options`
-- `Permissions-Policy`
+## Tecnologias Utilizadas
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
 
-Configured in:
+## Como rodar o projeto
+1. Instale as dependências:
+   ```bash
+   npm install
+   ```
+2. Inicie o servidor de desenvolvimento:
+   ```bash
+   npm run dev
+   ```
+3. Acesse em [http://localhost:5173](http://localhost:5173)
 
-- `vite.config.ts` for `vite dev` and `vite preview`
-- `index.html` (meta fallback for static hosting)
+## Deploy
+O deploy pode ser feito facilmente em plataformas como Vercel, Netlify ou GitHub Pages.
 
-For production, prefer setting these as real HTTP response headers in your host/CDN
-(Cloudflare, Netlify, Vercel, Nginx, etc.) rather than only using meta tags.
+## Contato
+- Telefone: (11) 2597-1415
+- Endereço: Av. Oswaldo Pucci, 60 — Itaquera, São Paulo
+- [Facebook Oficial](https://www.facebook.com/p/Bikecom-100069484750901/)
+- [Portal do Parque do Carmo](https://www.parquedocarmo.net/)
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+Desenvolvido por Beatriz Monteiro Vieira — [github.com/beamonteiro19](https://github.com/beamonteiro19)
