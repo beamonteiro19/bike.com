@@ -19,25 +19,5 @@ A página tem como objetivo apresentar de forma clara e atrativa os serviços de
 - [TypeScript](https://www.typescriptlang.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 
-## Como rodar o projeto
-1. Instale as dependências:
-   ```bash
-   npm install
-   ```
-2. Inicie o servidor de desenvolvimento:
-   ```bash
-   npm run dev
-   ```
-3. Acesse em [http://localhost:5173](http://localhost:5173)
-
-## Deploy
-O deploy pode ser feito facilmente em plataformas como Vercel, Netlify ou GitHub Pages.
-
-## Contato
-- Telefone: (11) 2597-1415
-- Endereço: Av. Oswaldo Pucci, 60 — Itaquera, São Paulo
-- [Facebook Oficial](https://www.facebook.com/p/Bikecom-100069484750901/)
-- [Portal do Parque do Carmo](https://www.parquedocarmo.net/)
-
 ---
 Desenvolvido por Beatriz Monteiro Vieira — [github.com/beamonteiro19](https://github.com/beamonteiro19)
